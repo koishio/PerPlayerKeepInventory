@@ -19,6 +19,9 @@ public class PlayerDeathEventHandler implements Listener {
         if (dataManager.getKeepInventoryState(player) && !dataManager.isParentFromGamerule(player)) {
             event.setKeepInventory(true);
             event.setKeepLevel(true);
+            // 清空掉落物和经验掉落
+            event.getDrops().clear();
+            event.setDroppedExp(0);
         }
     }
 }
