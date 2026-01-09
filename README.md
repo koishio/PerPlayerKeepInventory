@@ -17,12 +17,12 @@
 
 ## 📥 下载与安装
 
-1.  从 [Releases 页面](https://github.com/koishio/PerPlayerKeepInventory/releases) 下载最新版本的 `.jar` 文件。
+1.  从 [Modrinth](https://modrinth.com/plugin/perplayerkeepinventory) 下载最新版本的 `.jar` 文件。
 2.  将下载的 `.jar` 文件放入您 Paper 服务器的 `plugins/` 目录下。
 3.  重启或重载您的服务器。
 4.  插件将自动生成默认配置文件 (`config.yml`)，您可以根据需要调整。
 
-**前提条件**：本插件需要运行 **Paper 1.21.8** 或更高版本的服务器。
+**前提条件**：本插件需要运行 **Paper 1.21.8** 或更高版本的服务器。其他版本未经测试。
 
 ## 📖 命令与权限
 
@@ -60,6 +60,6 @@
 
 ```yaml
 # PerPlayerKeepInventory 配置文件
-command-root: "keepinv" # 主命令的名称，重启服务器后生效
+rootCommandNodeName: "keepInv" # 主命令的名称，重启服务器后生效
 ```
 
