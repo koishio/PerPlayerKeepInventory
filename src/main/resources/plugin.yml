@@ -1,5 +1,5 @@
 name: keepInv
-version: '1.1'
+version: '1.2'
 main: org.koishio.keepInv.KeepInv
 api-version: '1.21'
 permissions:
@@ -9,6 +9,9 @@ permissions:
   keepinv.set:
     description: 允许设置自己的死亡掉落状态
     default: op
+  keepinv.toggle:
+    description: 允许切换自己的死亡掉落状态
+    default: op
   keepinv.reset:
     description: 允许重置自己的死亡掉落状态
     default: op
@@ -17,6 +20,9 @@ permissions:
     default: op
   keepinv.set.others:
     description: 允许设置他人的死亡掉落状态
+    default: op
+  keepinv.toggle.others:
+    description: 允许切换他人的死亡掉落状态
     default: op
   keepinv.reset.others:
     description: 允许重置他人的死亡掉落状态
