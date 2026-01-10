@@ -19,7 +19,7 @@ public final class KeepInv extends JavaPlugin {
         FileConfiguration config = getConfig();
         String rootCommandNodeName = config.getString("rootCommandNodeName", "keepInv");
         KeepInvDataManager dataManager = new KeepInvDataManager(KEEP_INV_KEY);
-        KeepInvCommand keepInvCommand = new KeepInvCommand(dataManager, this.getLifecycleManager());
+        KeepInvCommand keepInvCommand = new KeepInvCommand(LOGGER, dataManager, this.getLifecycleManager());
         getServer().getPluginManager().registerEvents(new PlayerDeathEventHandler(dataManager), this);
         keepInvCommand.registerKeepInvCommand(rootCommandNodeName);
     }

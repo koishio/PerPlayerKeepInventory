@@ -1,6 +1,7 @@
 name: keepInv
-version: '1.2'
+version: '1.2.1'
 main: org.koishio.keepInv.KeepInv
+author: "koishio"
 api-version: '1.21'
 permissions:
   keepinv.get:
